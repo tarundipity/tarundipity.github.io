@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yin-blue: #306AC0;
+    --periwinkle: #DDDDFF;
+    --white: #FCFCFF;
+    --pale-indigo: #F2F2FF;
+    --night: #000F08;
+
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--white);
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--night);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+/* Name in Nav*/
+.navbar .sparkles {
+    font-size: 20px;
+}
+
+.navbar .name {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    font-weight: 750;
+}
+
+.navbar .separator {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.navbar .title {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/* Menu in Nav */
+
+.navbar .main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+}
+
+.navbar .main-menu ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    transition: 0.5s;
+    font-weight: 300;
+}
+
+.navbar ul li a:hover {
+    color: var(--yin-blue);
+    font-weight: 325;
+}
+
+.active {
+    color: var(--yin-blue);
+    font-weight: 350;
+}
+
+/*Sidebar background */
+.sidebar {
+    position: absolute;
+    width: 40%;
+    height: 115vh;
+    background-color: var(--periwinkle);
+    left: 0;
+}
+
+/*about section background*/
+.about-section {
+    text-align: justify;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    background-color: var(--white);
+    left: 47%;
+    top: 75px;
+}
+
+/*Profile card */
+.personal-card {
+    width: 300px;
+    height: 400px;
+    background: var(--pale-indigo);
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: 80%px;
+    height: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    background-color: var(--white);
+}
+
+.profile-image img {
+    width: 89%;
+    height: auto;
+    object-fit: contain;
+    object-position: bottom;
+
+}
+
+.card-name-small {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.line {
+    width: 40px;
+    height: 2px;
+    background-color: var(--yin-blue);
+    margin: 10px auto;
+    border: none;
+    position: relative;
+}
+
+.card-title {
+    font-size: 16px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.card-icon-bar {
+    z-index: 100;
+    width: 300px;
+    height: 45px;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    top: 8%;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/* Card Icons Styling */
+
+/* Card Icons Styling */
+.card-icon-bar img {
+    width: 24px;
+    height: 24px;
+    margin-inline: 10px;
+}
+
+.card-icon-bar img:hover {
+    width: 26px;
+    height: 26px;
+    transition: 0.1s;
+    opacity: 0.7;
+}
+
+
+/*About Section*/
+
+.about-section h1 {
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.about-section h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.buttons-group {
+    display: inline-flex;
+    width: fit-content;
+    margin: 15px 10px;
+    gap: 20px;
+
+}
+
+.buttons-group .button-resume {
+    font-family: 'Roboto';
+    padding: 12.5px 30px;
+    border: 2px solid var(--yin-blue);
+    border-radius: 100px;
+    background-color: var(--yin-blue);
+    color: var(--white);
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+.buttons-group .button-projects {
+    font-family: 'Roboto';
+    padding: 12.5px 30px;
+    border: 2px solid var(--yin-blue);
+    border-radius: 100px;
+    background-color: var(--white);
+    color: var(--yin-blue);
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+.about-section p {
+    position: relative;
+    margin: 15px 5px;
+    font-size: 15px;
+    line-height: 1.6;
+}
