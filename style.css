@@ -95,6 +95,10 @@ ul {
     font-weight: 350;
 }
 
+/*------------------*/
+/*About Me Page     */
+/*------------------*/
+
 /*Sidebar background */
 .sidebar {
     position: absolute;
@@ -226,7 +230,7 @@ ul {
 
 }
 
-.buttons-group .button-resume {
+.button-resume {
     font-family: 'Roboto';
     padding: 12.5px 30px;
     border: 2px solid var(--yin-blue);
@@ -237,7 +241,7 @@ ul {
     cursor: pointer;
 }
 
-.buttons-group .button-projects {
+.button-projects {
     font-family: 'Roboto';
     padding: 12.5px 30px;
     border: 2px solid var(--yin-blue);
@@ -253,4 +257,58 @@ ul {
     margin: 15px 5px;
     font-size: 15px;
     line-height: 1.6;
+}
+
+/*----------------------------------*/
+/*Temp: Under Construction Page     */
+/*----------------------------------*/
+/*Sidebar background */
+
+.under-construction {
+    position: absolute;
+    left: 80%;
+    width: 40%;
+    height: auto;
+    background-color: var(--periwinkle);
+
+    z-index: 1;
+}
+
+.under-construction-page h1 {
+    position: fixed;
+    left: 60%;
+    bottom: 70%;
+    font-size: 80px;
+    background-color: var(--periwinkle);
+    padding: 40px;
+    width: 40%;
+}
+
+.under-construction-page h2 {
+    position: fixed;
+    left: 60%;
+    bottom: 49%;
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 125;
+}
+
+.resume-button {
+    font-family: 'Roboto';
+    padding: 12.5px 30px;
+    border: 2px solid var(--yin-blue);
+    border-radius: 100px;
+    background-color: var(--yin-blue);
+    color: var(--white);
+    font-weight: 100px;
+    cursor: pointer;
+}
+
+
+.tarun-tools {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    left: 10%;
+    top: 10%;
 }
