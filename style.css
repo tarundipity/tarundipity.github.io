@@ -95,6 +95,12 @@ ul {
     font-weight: 350;
 }
 
+.hamburger,
+#menu-toggle,
+.main-menu {
+    display: none;
+}
+
 /*------------------*/
 /*About Me Page     */
 /*------------------*/
@@ -317,11 +323,82 @@ ul {
     top: 10%;
 }
 
+.main-menu {
+    display: none;
+}
+
+.hamburger,
+#menu-toggle {
+    display: none;
+}
+
 /*----------------------------------*/
 /*Smaller Screen Settings     */
 /*----------------------------------*/
 
 @media (max-width: 768px) {
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    /* THIS IS THE KEY SECTION */
+    .main-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        /* depends on your navbar height */
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        padding: 10px 0;
+        z-index: 999;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    #menu-toggle:checked+label+.main-menu {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .main-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .main-menu li {
+        width: 100%;
+    }
+
+    .main-menu a {
+        display: block;
+        padding: 12px 20px;
+        width: 100%;
+        color: var(--night);
+    }
+
+    /* Changes to personal card and about me*/
     .main-container {
         flex-direction: column;
     }
