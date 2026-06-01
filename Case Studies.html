@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Case Studies · Tarun Kaur</title>
+<link rel="stylesheet" href="styles.css?v=5" />
+<style>
+  .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px}
+  .hub-card{display:flex;flex-direction:column}
+  .hub-card .hc-top{display:flex;gap:16px;align-items:center;margin-bottom:15px}
+  .hub-card h3{font-family:var(--serif);font-weight:500;font-size:23px;line-height:1.12;letter-spacing:-.01em}
+  .hub-card .hc-role{font-size:12px;font-weight:700;color:var(--accent-ink);margin-top:3px}
+  .hub-card .summary{font-size:14.5px;color:var(--ink-soft);text-wrap:pretty}
+  .hub-card .proj-tags{margin:13px 0 20px}
+  .hub-card .btn{align-self:flex-start;margin-top:auto}
+  .hc-status{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:10.5px;
+    letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:14px}
+  .hc-status.live{background:var(--mint-soft);color:var(--mint-ink)}
+  .hc-status.wip{background:var(--butter-soft);color:var(--butter-ink)}
+  .hc-status .pulse{width:7px;height:7px;border-radius:50%;background:currentColor}
+  .hub-more{border:2px dashed var(--line);background:transparent;box-shadow:none;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+    gap:9px;color:var(--ink-mute);min-height:220px}
+  .hub-more svg{width:30px;height:30px;opacity:.7}
+  .hub-more .hm-t{font-weight:700;font-size:15px;color:var(--ink-soft)}
+  .hub-more .hm-s{font-family:var(--mono);font-size:11.5px}
+  @media(max-width:880px){.hub-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-blobs="on">
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<header class="topnav">
+  <a class="nav-brand" href="index.html#about"><span class="badge">TK</span> Tarun Kaur</a>
+  <nav class="nav-links">
+    <a href="index.html#about">About</a>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#projects">Projects</a>
+    <a href="index.html#contact">Contact</a>
+    <a class="page" href="Case Studies.html" aria-current="page">Case studies</a>
+  </nav>
+</header>
+
+<div class="cs-wrap">
+
+  <a class="cs-back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to portfolio
+  </a>
+
+  <header class="cs-hero">
+    <span class="role-pill">Deep-dives</span>
+    <h1>Case studies &amp; deep-dives</h1>
+    <p class="deck">The full stories behind the work — how I framed the problem, what I built, and what I learned. A few are written up; more are on the way.</p>
+  </header>
+
+  <section class="cs-section">
+    <div class="hub-grid">
+
+      <!-- caseHacks -->
+      <article class="card hub-card">
+        <span class="hc-status live"><span class="pulse"></span>Live</span>
+        <div class="hc-top">
+          <div class="proj-logo has-img contain"><img src="img/casehacks.png" alt="caseHacks logo" /></div>
+          <div>
+            <h3>caseHacks</h3>
+            <div class="hc-role">VP, Education · 150+ students</div>
+          </div>
+        </div>
+        <p class="summary">Designing the end-to-end learning experience for a 300+ student hackathon: two case challenges, beginner-ready workshops, sponsor speakers, and a judging rubric.</p>
+        <div class="proj-tags">
+          <span class="tag">Curriculum design</span>
+          <span class="tag">Workshops</span>
+          <span class="tag">Judging criteria</span>
+        </div>
+        <a class="btn btn-primary" href="caseHacks Case Study.html">
+          Read the case study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- Wealthsimple -->
+      <article class="card hub-card">
+        <span class="hc-status live"><span class="pulse"></span>Live</span>
+        <div class="hc-top">
+          <div class="proj-logo" style="background:linear-gradient(150deg,#9B82F2,var(--coral))"><span>W</span></div>
+          <div>
+            <h3>Wealthsimple</h3>
+            <div class="hc-role">BU111 Case Competition · Team</div>
+          </div>
+        </div>
+        <p class="summary">Our first-year team pitched a “Student Starter Platform” for Wealthsimple — simulated trading, bite-size education, and student perks, with a prototype, deck &amp; video.</p>
+        <div class="proj-tags">
+          <span class="tag">Product concept</span>
+          <span class="tag">ProtoPie prototype</span>
+          <span class="tag">Pitch deck</span>
+        </div>
+        <a class="btn btn-primary" href="Wealthsimple Product.html">
+          Read the case study
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </article>
+
+      <!-- More coming -->
+      <article class="card hub-card hub-more">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 5v14M5 12h14"/></svg>
+        <div class="hm-t">More deep-dives on the way</div>
+        <div class="hm-s">AutoTrader · Yolando · school builds</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="cs-section" style="margin-top:34px;text-align:center">
+    <a class="btn btn-primary" href="index.html#work">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      See all my work
+    </a>
+  </section>
+
+</div>
+
+</body>
+</html>

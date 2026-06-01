@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Wealthsimple — Student Starter Platform · Tarun Kaur</title>
+<link rel="stylesheet" href="styles.css?v=5" />
+<style>
+  .ws-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+  .ws-link{display:flex;align-items:center;gap:13px;flex:1;min-width:230px;
+    background:var(--surface);border:1px solid rgba(255,255,255,.7);border-radius:var(--r-lg);
+    box-shadow:var(--shadow),var(--inset-hi);padding:18px 20px;transition:transform .2s,box-shadow .2s}
+  .ws-link:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg),var(--inset-hi)}
+  .ws-link .ic{width:44px;height:44px;flex-shrink:0;border-radius:13px;display:flex;align-items:center;
+    justify-content:center;background:var(--accent-soft);color:var(--accent-ink)}
+  .ws-link .ic svg{width:22px;height:22px}
+  .ws-link .lt{display:block;font-weight:700;font-size:15px}
+  .ws-link .ls{display:block;font-size:12.5px;color:var(--ink-soft);margin-top:2px}
+  .ws-link .go{margin-left:auto;color:var(--accent-ink);flex-shrink:0}
+  .ws-link>span:not(.ic):not(.go){min-width:0}
+  .ws-link .go svg{width:18px;height:18px}
+  .proto-shots{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;align-items:flex-end;
+    margin:4px 0 20px;padding:32px 20px 26px;border-radius:var(--r-lg);
+    background:radial-gradient(120% 95% at 50% 0%, var(--accent-soft), transparent 62%), var(--surface-2);
+    border:1px solid var(--line)}
+  .proto-shots figure{margin:0;text-align:center}
+  .proto-shots img{height:440px;max-width:100%;object-fit:contain;display:block;
+    filter:drop-shadow(0 18px 32px rgba(0,0,0,.18))}
+  .proto-shots figcaption{font-family:var(--mono);font-size:10.5px;color:var(--ink-mute);margin-top:12px}
+  @media (max-width:640px){.proto-shots img{height:360px}}
+  .team{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+  .team .who{font-size:13px;font-weight:600;color:var(--ink-soft);background:var(--surface-2);
+    border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+  .team .who.me{background:var(--accent-soft);color:var(--accent-ink);border-color:transparent}
+</style>
+</head>
+<body data-blobs="on" style="--accent:#9B82F2;--accent-soft:#ECE6FF;--accent-ink:#5A41B5">
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<header class="topnav">
+  <a class="nav-brand" href="index.html#about"><span class="badge">TK</span> Tarun Kaur</a>
+  <nav class="nav-links">
+    <a href="index.html#about">About</a>
+    <a href="index.html#work">Work</a>
+    <a href="index.html#contact">Contact</a>
+    <a class="page" href="Case Studies.html">Case studies</a>
+  </nav>
+</header>
+
+<div class="cs-wrap">
+
+  <a class="cs-back" href="Case Studies.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to case studies
+  </a>
+
+  <!-- HERO -->
+  <header class="cs-hero">
+    <span class="role-pill">Live case competition · BU111</span>
+    <h1>Wealthsimple — the Student Starter Platform</h1>
+    <p class="deck">A first-year team case competition at Wilfrid Laurier: we designed a new in-app feature to help Gen Z build real financial literacy — and stick with Wealthsimple for the long run.</p>
+    <div class="cs-meta">
+      <div class="m"><div class="mk">type</div><div class="mv">Live case competition</div></div>
+      <div class="m"><div class="mk">course</div><div class="mv">BU111 · Laurier</div></div>
+      <div class="m"><div class="mk">team</div><div class="mv">5 students</div></div>
+      <div class="m"><div class="mk">deliverables</div><div class="mv">Prototype · deck · pitch</div></div>
+    </div>
+  </header>
+
+  <!-- CONTEXT -->
+  <section class="cs-section">
+    <div class="section-eyebrow">context</div>
+    <h2>The challenge</h2>
+    <p>For the Wealthsimple Live Case Competition in BU111, our team was asked to propose a way for Wealthsimple to win over a notoriously tricky audience: students. Gen Z is curious about investing but often intimidated by it — and expensive to acquire as customers. We needed an idea that built genuine financial confidence <em>and</em> made business sense for Wealthsimple.</p>
+  </section>
+
+  <!-- PROBLEM / SOLUTION -->
+  <section class="cs-section">
+    <div class="cs-cards">
+      <div class="cs-card">
+        <div class="cn">01</div>
+        <h3>The problem</h3>
+        <p>Students want to start investing but lack the confidence and literacy to begin — and traditional acquisition (ads, incentives) is costly with low long-term retention.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cn">02</div>
+        <h3>Our proposal</h3>
+        <p>A <strong>Student Starter Platform</strong> built into the Wealthsimple app — a low-stakes place to learn by doing, with perks that reward students for sticking around.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S IN IT -->
+  <section class="cs-section">
+    <div class="section-eyebrow">the platform</div>
+    <h2>What we built into it</h2>
+    <div class="cs-cards">
+      <div class="cs-card"><div class="cn">📈</div><h3>Simulated trading</h3><p>A risk-free investing sandbox so students can learn the mechanics before using real money.</p></div>
+      <div class="cs-card"><div class="cn">📚</div><h3>Bite-size education</h3><p>Condensed, student-friendly modules that make financial concepts approachable.</p></div>
+      <div class="cs-card"><div class="cn">🎁</div><h3>Student perks</h3><p>Exclusive discounts and rewards through WS Cash and the WS Card to drive everyday use.</p></div>
+      <div class="cs-card"><div class="cn">🎓</div><h3>On-campus rollout</h3><p>A targeted campus marketing plan to drive adoption at a low acquisition cost.</p></div>
+    </div>
+  </section>
+
+  <!-- GOALS -->
+  <section class="cs-section">
+    <div class="section-eyebrow">goals</div>
+    <h2>What it was designed to do</h2>
+    <div class="crit-table">
+      <div class="crit"><div class="cl">Build financial confidence<span>Help students make better choices through hands-on learning.</span></div><div class="cw">🎯</div></div>
+      <div class="crit"><div class="cl">Lower acquisition cost<span>Reach students efficiently through campus outreach.</span></div><div class="cw">💸</div></div>
+      <div class="crit"><div class="cl">Drive long-term engagement<span>Keep users active across the Wealthsimple ecosystem.</span></div><div class="cw">🔁</div></div>
+    </div>
+  </section>
+
+  <!-- PROTOTYPE + ARTIFACTS -->
+  <section class="cs-section">
+    <div class="section-eyebrow">see it</div>
+    <h2>Prototype, deck &amp; pitch</h2>
+    <p style="margin-bottom:16px">We built an interactive prototype in ProtoPie and pitched the full proposal with a group deck. Everything lives in the GitHub repo.</p>
+    <div class="proto-shots">
+      <figure><img src="img/ws-proto-1.png" alt="Student-Starter Platform prototype — learn screen" /><figcaption>Learn &amp; simulate</figcaption></figure>
+      <figure><img src="img/ws-proto-2.png" alt="Student-Starter Platform prototype — benefits screen" /><figcaption>Benefits &amp; WS Cash</figcaption></figure>
+    </div>
+    <div class="ws-links">
+      <a class="ws-link" href="https://cloud.protopie.io/p/28f63c2f0e" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M5 3l14 9-14 9V3z"/></svg></span>
+        <span><span class="lt">Try the prototype</span><span class="ls">Interactive ProtoPie demo</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="ws-link" href="https://github.com/tarundipity/Wealthsimple-Case-Competition/blob/main/Live%20Case.pptx" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+        <span><span class="lt">Presentation deck</span><span class="ls">Full group pitch (.pptx)</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="ws-link" href="https://github.com/tarundipity/Wealthsimple-Case-Competition/blob/main/Weathsimple_Case_Competition_Prototype%20Video.mp4" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="6" width="14" height="12" rx="2"/><path d="M21.5 8.5l-5 3.5 5 3.5v-7z"/></svg></span>
+        <span><span class="lt">Prototype walkthrough</span><span class="ls">Video demo (.mp4)</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+      <a class="ws-link" href="https://github.com/tarundipity/Wealthsimple-Case-Competition" target="_blank" rel="noopener">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2C5.7 22 5 19.7 5 19.7c-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 24 12.5C24 5.9 18.6.5 12 .5z"/></svg></span>
+        <span><span class="lt">GitHub repo</span><span class="ls">All competition materials</span></span>
+        <span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- MY ROLE / TEAM -->
+  <section class="cs-section">
+    <div class="section-eyebrow">my role</div>
+    <h2>Where I fit in</h2>
+    <p style="margin-bottom:14px">This was a team submission — five of us shaping the idea, prototype, and pitch together. <strong>Add a line here about what you specifically owned</strong> (e.g. the product concept, the prototype, the go-to-market plan, or the financial case).</p>
+    <div class="team">
+      <span class="who me">Tarundeep Kaur</span>
+      <span class="who">Josh</span>
+      <span class="who">Divraj</span>
+      <span class="who">Joseph</span>
+      <span class="who">Rhea</span>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="cs-section">
+    <div class="section-eyebrow">looking back</div>
+    <h2>What I took away</h2>
+    <p>It was my first taste of turning a fuzzy business prompt into a concrete product idea — user need, feature concept, prototype, and a go-to-market story, all under competition pressure.</p>
+  </section>
+
+  <!-- NEXT -->
+  <section class="cs-section" style="margin-top:40px;text-align:center">
+    <a class="btn btn-primary" href="Case Studies.html" style="background:var(--accent)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Back to case studies
+    </a>
+  </section>
+
+</div>
+
+</body>
+</html>

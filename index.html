@@ -1,120 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarun Kaur</title>
-
-    <!-- Font - Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="shortcut icon" href="images/sparkles.png" type="sparkles">
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tarun Kaur — Portfolio</title>
+<link rel="stylesheet" href="styles.css?v=5" />
 </head>
+<body data-profile="sticker" data-hero="marquee" data-blobs="on">
 
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-name-item">
-                <span class="sparkles">✨</span>
-                <span class="name">Tarun Kaur </span>
-                <span class="space"> </span>
-                <span class="separator"> | </span>
-                <span class="title">3RD YEAR BBA/CS STUDENT</span>
-            </a>
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
 
-            <!-- Hamburger -->
-            <input type="checkbox" id="menu-toggle" />
-            <label for="menu-toggle" class="hamburger">&#9776;</label>
+<header class="topnav">
+  <a class="nav-brand" href="#about"><span class="badge">TK</span> Tarun Kaur</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <a class="page" href="Case Studies.html">Case studies <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+  </nav>
+</header>
+
+<div class="shell">
+
+  <!-- ============ STICKY PROFILE RAIL ============ -->
+  <aside class="rail">
+    <div class="pcard">
+      <div class="avatar-wrap">
+        <div class="avatar-frame">
+          <span class="spark" aria-hidden="true">
+            <svg class="s1" viewBox="0 0 100 100" fill="currentColor"><path d="M50 2 C 53 30 70 47 98 50 C 70 53 53 70 50 98 C 47 70 30 53 2 50 C 30 47 47 30 50 2 Z"/></svg>
+            <svg class="s2" viewBox="0 0 100 100" fill="currentColor"><path d="M50 2 C 53 30 70 47 98 50 C 70 53 53 70 50 98 C 47 70 30 53 2 50 C 30 47 47 30 50 2 Z"/></svg>
+          </span>
+          <div class="wave">hi! 👋</div>
+          <div class="avatar"><img src="img/avatar.jpg?v=1" alt="Tarun Kaur" style="object-fit: cover" /></div>
         </div>
+      </div>
+      <h1>Tarun Kaur</h1>
+      <span class="role">4th-Year BBA + Computer Science</span>
+      <p class="tagline">I turn messy ideas into thoughtful products, campaigns, and stories.</p>
 
-        <div class="main-menu">
-            <ul>
-                <li>
-                    <a class="active" href="index.html">About Me</a>
-                </li>
-                <li>
-                    <a href="construction.html">Resume</a>
-                </li>
-                <li>
-                    <a href="construction.html">Projects</a>
-                </li>
-                <li>
-                    <a href="construction.html">Contact</a>
-                </li>
-            </ul>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/tarundeep-kaur08/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.25 8.25h4.5V23h-4.5V8.25zM8.5 8.25h4.31v2.02h.06c.6-1.14 2.07-2.34 4.26-2.34 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.54c0-1.56-.03-3.56-2.17-3.56-2.17 0-2.5 1.7-2.5 3.45V23H8.5V8.25z"/></svg>
+        </a>
+        <a href="https://tarundipity.github.io/" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.92 1.24 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+        </a>
+        <a href="mailto:kaur2814@mylaurier.ca" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6l9 6.5L21 6"/></svg>
+        </a>
+      </div>
+
+      <div class="facts">
+        <span class="fact"><span class="dot"></span>Toronto · Waterloo</span>
+        <span class="fact"><span class="dot"></span>Product &amp; Marketing</span>
+        <span class="fact"><span class="dot"></span>Puppy mom 🐶</span>
+        <span class="fact"><span class="dot"></span>BTS on repeat</span>
+      </div>
+
+      <a class="resume-btn" href="uploads/Resume - Tarundeep Kaur.pdf" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
+        Download résumé
+      </a>
+    </div>
+  </aside>
+
+  <!-- ============ CONTENT ============ -->
+  <main class="content">
+
+    <!-- HERO / ABOUT -->
+    <section class="card hero" id="about">
+      <div class="section-eyebrow">about</div>
+      <h2>I work at the intersection of <em>product, people &amp; curiosity</em> — making complex things easier to understand.</h2>
+      <p class="lead">Hi, I'm Tarun 👋 I'm a <strong>Business Administration and Computer Science</strong> student at Wilfrid Laurier with a curiosity for how products, people, and ideas come together. Over the past few years, I've had the opportunity to work across <strong>SEO, product marketing, analytics, and operations</strong> — from analyzing search performance at AutoTrader to helping shape messaging and content systems for AI start-ups. 📈 Outside of work, I spend a lot of time building student programs, mentoring, and creating resources that make learning a little less intimidating. 🌱 Most of the time, you'll find me organizing ideas, asking questions, and figuring out how to make things work a little better. ✨</p>
+
+      <!-- editorial chips (default) -->
+      <div class="hero-chips">
+        <span class="chip on">🚀 Product</span>
+        <span class="chip">🎯 Marketing</span>
+        <span class="chip">♟️ Strategy</span>
+        <span class="chip">🎨 UX</span>
+        <span class="chip">🔮 Data &amp; SEO</span>
+        <span class="chip">🪄 Content</span>
+        <span class="chip">🧩 Ops &amp; Programs</span>
+      </div>
+
+      <!-- marquee variant -->
+      <div class="marquee">
+        <div class="marquee-track">
+          <span class="chip"><span class="star">✦</span>Product thinking</span>
+          <span class="chip"><span class="star">✦</span>Messaging frameworks</span>
+          <span class="chip"><span class="star">✦</span>SEO &amp; analytics</span>
+          <span class="chip"><span class="star">✦</span>Content strategy</span>
+          <span class="chip"><span class="star">✦</span>Program ops</span>
+          <span class="chip"><span class="star">✦</span>Mentorship</span>
+          <span class="chip"><span class="star">✦</span>Product thinking</span>
+          <span class="chip"><span class="star">✦</span>Messaging frameworks</span>
+          <span class="chip"><span class="star">✦</span>SEO &amp; analytics</span>
+          <span class="chip"><span class="star">✦</span>Content strategy</span>
+          <span class="chip"><span class="star">✦</span>Program ops</span>
+          <span class="chip"><span class="star">✦</span>Mentorship</span>
         </div>
-    </nav>
+      </div>
 
-    <!-- Intro -->
-    <section class="intro">
-        <div class="container">
-            <div class="sidebar">
-                <div class="personal-card">
-                    <div class="profile-image">
-                        <img src="images/hi.png" alt="Tarun Kaur">
-                    </div>
-
-                    <h2 class="card-name-small">Tarun Kaur</h2>
-                    <hr class="line">
-                    <p class="card-title">3RD YEAR BBA/CS STUDENT</p>
-
-                    <div class="card-icon-bar">
-                        <a href="https://www.linkedin.com/in/tarundeep-kaur08/">
-                            <img src="images/linkedin_logo.png" alt="Linkedin">
-                        </a>
-                        <a href="https://github.com/tarundipity/tarundipity.github.io">
-                            <img src="images/github_logo.png" alt="GitHub">
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="about-section">
-                <h1>Hello</h1>
-                <h3>Nice to meet you!</h3>
-                <div class="buttons-group">
-                    <a href="resume.html">
-                        <button class="button-resume">RESUME</button>
-                    </a>
-                    <a href="projects.html">
-                        <button class="button-projects">PROJECTS</button>
-                    </a>
-
-
-                </div>
-
-                <p>Welcome! I'm Tarun (a.ka Tarundeep Kaur). I am a <b>3rd year student at Wilfrid Laurier
-                        University</b>
-                    pursuing a double degree in <b>Business Adminstation and Computer Science</b>. I’m currently the
-                    <b>Chief
-                        Operating Officer of Talaria</b>, a nonprofit
-                    focused on creating mentorship opportunities for underrepresented high school students. Alongside
-                    this, I am
-                    currently completeing my <b>second
-                        co-op at AutoTrader</b>, specializing and helping within the Search Engine Optimization team.
-                </p>
-                <p> As a person with diverse interests, I like to dabble in new
-                    challenges on the regular —whether it's competing in case
-                    competitions, researching an emerging topic tech, or learning how to knit, I’m always looking for
-                    ways to
-                    learn something new.</p>
-
-                <p><b>I'd love to connect on LinkedIn! Feel free to poke around and learn what I've been up to!</b></p>
-
-
-            </div>
-
-        </div>
+      <!-- cards variant -->
+      <div class="hero-grid">
+        <div class="hero-tile"><div class="k">what i do</div><p>Translate fuzzy ideas into clear products, campaigns, and content systems.</p></div>
+        <div class="hero-tile"><div class="k">how i think</div><p>Structure first — frameworks, docs, and data that make decisions easier.</p></div>
+        <div class="hero-tile"><div class="k">what i love</div><p>Making complex things human, accessible, and a little more delightful.</p></div>
+        <div class="hero-tile"><div class="k">right now</div><p>BBA + CS at Wilfrid Laurier, exploring PM / TPM &amp; marketing roles.</p></div>
+      </div>
     </section>
 
-</body>
+    <!-- FEATURED WORK -->
+    <section id="work">
+      <div class="cs-banner" id="csBanner">
+        <span class="cs-banner-spark">✨</span>
+        <div class="cs-banner-text">
+          <span class="cs-banner-kicker">Fresh case study</span>
+          <span class="cs-banner-head">Psst — check out what I built for <strong>caseHacks</strong>: a case challenge, two expert-led workshops &amp; a judging rubric for 150+ students.</span>
+        </div>
+        <a class="cs-banner-cta" href="caseHacks Case Study.html">See what I did
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+        <button class="cs-banner-x" type="button" aria-label="Dismiss banner">×</button>
+      </div>
+      <div class="work-head">
+        <h3>Featured work</h3>
+        <div class="filters" role="tablist">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="product">Product</button>
+          <button data-filter="marketing">Marketing</button>
+          <button data-filter="leadership">Leadership</button>
+        </div>
+      </div>
 
+      <div class="work-grid">
+
+        <!-- Yolando -->
+        <article class="proj" data-cat="product marketing">
+          <div class="proj-top">
+            <div class="proj-logo has-img"><img src="img/yolando.jpeg" alt="Yolando logo" /></div>
+            <div class="proj-body">
+              <div class="kicker">
+                <span class="role-pill">Product &amp; Marketing Co-op</span>
+                <span class="dates">Sept – Dec 2025</span>
+              </div>
+              <h4>Yolando — AI product messaging &amp; education</h4>
+              <p class="summary">Product &amp; content role on an early-stage AI product — built the messaging framework and a 75+ piece AI/LLM resource hub to drive discoverability and early adoption.</p>
+              <div class="proj-tags">
+                <span class="tag">Messaging framework</span>
+                <span class="tag">Resource hub</span>
+                <span class="tag">Onboarding docs</span>
+                <span class="tag">PLG</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-foot">
+            <div class="expand-hint">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="proj-detail"><div class="proj-detail-inner"><div class="proj-detail-pad">
+            <div class="detail-grid">
+              <div class="dblock"><div class="dk">context</div><ul><li>Early-stage AI product needing clear positioning and a path to early adoption.</li></ul></div>
+              <div class="dblock"><div class="dk">my role</div><ul><li>Owned product messaging &amp; content, partnering closely with engineering and business stakeholders.</li></ul></div>
+              <div class="dblock full"><div class="dk">what i worked on</div><ul>
+                <li>Developed a product messaging framework — value props, content structure, and user-education pathways.</li>
+                <li>Researched, built and scaled a 75+ piece AI/LLM resource hub to boost discoverability and category authority.</li>
+                <li>Owned onboarding docs, lifecycle comms, and in-app support content to reduce friction.</li>
+                <li>Connected client feedback to product, content, and prompt workflows alongside eng &amp; business stakeholders.</li>
+              </ul></div>
+            </div>
+          </div></div></div>
+        </article>
+
+        <!-- BirdseyePost -->
+        <article class="proj" data-cat="marketing product">
+          <div class="proj-top">
+            <div class="proj-logo has-img"><img src="img/birdseye.jpeg" alt="BirdseyePost logo" /></div>
+            <div class="proj-body">
+              <div class="kicker">
+                <span class="role-pill">Marketing &amp; Product Coordinator</span>
+                <span class="dates">Sept – Dec 2025</span>
+              </div>
+              <h4>BirdseyePost — content &amp; messaging strategy</h4>
+              <p class="summary">Defined end-to-end content and messaging strategy, then built a scalable production framework that cut turnaround time and kept weekly deliverables consistent.</p>
+              <div class="proj-tags">
+                <span class="tag">Positioning</span>
+                <span class="tag">Content ops</span>
+                <span class="tag">Brand guidelines</span>
+                <span class="tag">Client comms</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-foot">
+            <div class="expand-hint">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="proj-detail"><div class="proj-detail-inner"><div class="proj-detail-pad">
+            <div class="detail-grid">
+              <div class="dblock"><div class="dk">what i worked on</div><ul>
+                <li>Built positioning frameworks, value props, and content structure aligned to core use cases &amp; client segments.</li>
+                <li>Designed a scalable production framework — workflows, cadence, brand guidelines — improving consistency.</li>
+              </ul></div>
+              <div class="dblock"><div class="dk">impact</div><ul>
+                <li>Reduced turnaround time across weekly deliverables.</li>
+                <li>Led client-facing comms for high-impact commercial periods with incentive-driven narratives.</li>
+              </ul></div>
+            </div>
+          </div></div></div>
+        </article>
+
+        <!-- AutoTrader -->
+        <article class="proj" data-cat="data marketing">
+          <div class="proj-top">
+            <div class="proj-logo has-img contain"><img src="img/autotrader.png" alt="AutoTrader logo" /></div>
+            <div class="proj-body">
+              <div class="kicker">
+                <span class="role-pill">SEO Co-op</span>
+                <span class="dates">2024 – 2025 · two terms</span>
+              </div>
+              <h4>AutoTrader — SEO, analytics &amp; experimentation</h4>
+              <p class="summary">Two co-op terms running SEO experiments, Google Search Console analysis, and technical audits — turning Core Web Vitals and traffic data into recommendations cross-functional teams adopted.</p>
+              <div class="proj-tags">
+                <span class="tag">SEO experiments</span>
+                <span class="tag">Search Console</span>
+                <span class="tag">Technical audits</span>
+                <span class="tag">Core Web Vitals</span>
+                <span class="tag">VBA automation</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-foot">
+            <div class="expand-hint">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="proj-detail"><div class="proj-detail-inner"><div class="proj-detail-pad">
+            <div class="detail-grid">
+              <div class="dblock"><div class="dk">jan – apr 2025</div><ul>
+                <li>Performance analysis across clicks, impressions &amp; rankings → recommendations adopted into ongoing workflows.</li>
+                <li>Evaluated content architecture for a new MVP site with editorial &amp; engineering.</li>
+                <li>Analyzed paid vs. organic traffic in Google Ads; automated reporting in VBA &amp; Sheets.</li>
+              </ul></div>
+              <div class="dblock"><div class="dk">may – aug 2024</div><ul>
+                <li>Led a comprehensive SEO audit of editorial content with integrated marketing.</li>
+                <li>Launched experiments targeting key performance metrics.</li>
+                <li>Investigated Core Web Vitals; translated findings into prioritized recommendations.</li>
+              </ul></div>
+            </div>
+          </div></div></div>
+        </article>
+
+        <!-- Talaria -->
+        <article class="proj" id="talaria" data-cat="leadership">
+          <div class="proj-top">
+            <div class="proj-logo has-img"><img src="img/talaria.webp" alt="Talaria logo" /></div>
+            <div class="proj-body">
+              <div class="kicker">
+                <span class="role-pill">COO · Program Director</span>
+                <span class="dates">501(c) non-profit</span>
+              </div>
+              <h4>Talaria — research mentorship at scale</h4>
+              <p class="summary">Lead strategy &amp; operations for a global six-week research mentorship program — managing a 7-person team and systems serving 550+ students, with growth through partnerships and fundraising.</p>
+              <div class="proj-tags">
+                <span class="tag">Strategy &amp; ops</span>
+                <span class="tag">Team leadership</span>
+                <span class="tag">Partnerships</span>
+                <span class="tag">Fundraising</span>
+                <span class="tag">Mentorship</span>
+              </div>
+            </div>
+          </div>
+          <div class="proj-foot">
+            <div class="expand-hint">Read more
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+          <div class="proj-detail"><div class="proj-detail-inner"><div class="proj-detail-pad">
+            <div class="detail-grid">
+              <div class="dblock"><div class="dk">leadership</div><ul>
+                <li>Lead strategy &amp; operations for a global 6-week research mentorship program.</li>
+                <li>Manage a 7-person team and the systems serving 550+ students.</li>
+              </ul></div>
+              <div class="dblock"><div class="dk">growth &amp; outreach</div><ul>
+                <li>Drive organizational growth through digital infrastructure.</li>
+                <li>Build university partnerships and run fundraising initiatives.</li>
+              </ul></div>
+            </div>
+          </div></div></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section class="card personal" id="personal">
+      <div class="section-eyebrow">off the clock</div>
+      <h3>Things that feel very <em>Tarun</em></h3>
+      <p class="sub">The stuff that doesn't fit on a résumé but very much makes the work.</p>
+      <div class="tarun-grid">
+        <a class="tarun linked" href="https://github.com/tarundipity" target="_blank" rel="noopener">
+          <div class="emoji">📚</div>
+          <div class="tt">Building useful resources</div>
+          <div class="td">If it would've helped past-me, I'll make it for the next person.</div>
+          <span class="reveal-cue">My “how to use Git” repo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
+        </a>
+        <a class="tarun linked" href="#talaria">
+          <div class="emoji">🌱</div>
+          <div class="tt">Mentoring students</div>
+          <div class="td">My favourite work happens while helping someone else level up.</div>
+          <span class="reveal-cue">See my Talaria work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+        <div class="tarun media" tabindex="0">
+          <div class="emoji">🐶</div>
+          <div class="tt">Puppy mom</div>
+          <div class="td">Professional ball-thrower &amp; snack negotiator off the clock.</div>
+          <span class="reveal-cue">hover to meet Bibble 🐾</span>
+          <div class="peek photo" id="dog-peek" style="background-image:url('img/bibble.jpg?v=1')">
+            <span class="peek-cap">Bibble 🐾</span>
+          </div>
+        </div>
+        <a class="tarun media linked" href="https://www.youtube.com/watch?v=YXG1CxVDRL8" target="_blank" rel="noopener">
+          <div class="emoji">💜</div>
+          <div class="tt">Music &amp; a proud BTS fan</div>
+          <div class="td">A good playlist is honestly half my productivity system. On repeat right now: Baepsae.</div>
+          <span class="reveal-cue">play Baepsae 💜</span>
+          <div class="peek music">
+            <div class="disc"></div>
+            <div class="eq"><i></i><i></i><i></i><i></i><i></i></div>
+            <span class="peek-cap">BTS · Baepsae</span>
+          </div>
+        </a>
+        <div class="tarun">
+          <div class="emoji">🏋️‍♀️</div>
+          <div class="tt">Newly gym-curious</div>
+          <div class="td">Same energy as a side project: show up, log it, get 1% better.</div>
+        </div>
+        <div class="tarun media" tabindex="0">
+          <div class="emoji">📖</div>
+          <div class="tt">Always reading something</div>
+          <div class="td">Fiction, product writing, late-night Wikipedia rabbit holes.</div>
+          <span class="reveal-cue">hover to peek 📖</span>
+          <div class="peek book" id="book-peek">
+            <div class="cover" style="background-image:url('img/book-touch-of-darkness.webp')"></div>
+            <span class="peek-cap">Reading · A Touch of Darkness 📖</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="card contact" id="contact">
+      <div class="section-eyebrow" style="justify-content:center;color:rgba(255,255,255,.5)">say hi</div>
+      <h3>Let's make something <em>thoughtful</em> together.</h3>
+      <p>Open to PM / TPM, marketing, and strategy roles — and always happy to talk shop.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:kaur2814@mylaurier.ca">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6l9 6.5L21 6"/></svg>
+          kaur2814@mylaurier.ca
+        </a>
+        <a class="btn btn-light" href="https://www.linkedin.com/in/tarundeep-kaur08/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-light" href="https://tarundipity.github.io/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="smol">Tarun Kaur · BBA + CS · Wilfrid Laurier University · 2022–2027</div>
+    </section>
+
+  </main>
+</div>
+
+<!-- React + Babel for the Tweaks panel only (page content is plain HTML) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks.jsx"></script>
+<script src="app.js"></script>
+</body>
 </html>

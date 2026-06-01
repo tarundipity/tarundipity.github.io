@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>caseHacks — Case Study · Tarun Kaur</title>
+<link rel="stylesheet" href="styles.css?v=5" />
+<style>
+  /* ---- workshop feature cards ---- */
+  .ws-list{display:flex;flex-direction:column;gap:24px;margin-top:8px}
+  .ws-card{background:var(--surface);border:1px solid rgba(255,255,255,.7);border-radius:var(--r-lg);
+    box-shadow:var(--shadow),var(--inset-hi);overflow:hidden}
+  .ws-graphic{width:100%;display:block;border-bottom:1px solid var(--line)}
+  .ws-body{padding:24px 26px 26px;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:start}
+  .ws-num{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent-ink);background:var(--accent-soft);padding:4px 10px;border-radius:999px;display:inline-block}
+  .ws-body h3{font-family:var(--serif);font-weight:500;font-size:23px;letter-spacing:-.01em;margin:13px 0 4px}
+  .ws-by{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:2px}
+  .ws-by span{color:var(--ink-mute);font-weight:500}
+  .ws-body p.ws-desc{font-size:14.5px;color:var(--ink-soft);margin-top:11px;text-wrap:pretty}
+  .ws-candid{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-md);
+    border:1px solid var(--line);box-shadow:var(--shadow-sm);display:block}
+  .ws-cap{font-family:var(--mono);font-size:10.5px;color:var(--ink-mute);margin-top:8px;text-align:center}
+
+  /* ---- event photo gallery ---- */
+  .cs-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
+  .cs-gallery figure{margin:0;border-radius:var(--r-md);overflow:hidden;background:#0c0c0c;
+    border:1px solid var(--line);box-shadow:var(--shadow-sm);position:relative}
+  .cs-gallery img{width:100%;height:100%;aspect-ratio:16/10;object-fit:cover;display:block;
+    transition:transform .4s cubic-bezier(.3,.7,.4,1)}
+  .cs-gallery figure:hover img{transform:scale(1.04)}
+  .cs-gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:22px 16px 12px;
+    font-size:12.5px;font-weight:600;color:#fff;
+    background:linear-gradient(transparent,rgba(0,0,0,.72))}
+  @media (max-width:760px){
+    .ws-body{grid-template-columns:1fr}
+    .cs-gallery{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body data-blobs="on" style="--accent:#5BB4E6;--accent-soft:#DDF0FB;--accent-ink:#1E6F9E">
+
+<div class="blob b1"></div>
+<div class="blob b2"></div>
+<div class="blob b3"></div>
+
+<div class="cs-wrap">
+
+  <a class="cs-back" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Back to portfolio
+  </a>
+
+  <!-- HERO -->
+  <header class="cs-hero">
+    <span class="role-pill">VP, Education · caseHacks</span>
+    <h1>Designing the learning experience for a 150+ student hackathon</h1>
+    <p class="deck">One real-world case, two expert-led workshops, and a judging framework — built so first-timers could ship real work and judges could score it fairly.</p>
+    <div class="cs-meta">
+      <div class="m"><div class="mk">role</div><div class="mv">VP of Education</div></div>
+      <div class="m"><div class="mk">scope</div><div class="mv">End-to-end education track</div></div>
+      <div class="m"><div class="mk">scale</div><div class="mv">150+ participants</div></div>
+      <div class="m"><div class="mk">deliverables</div><div class="mv">Case · 2 workshops · rubric</div></div>
+    </div>
+  </header>
+
+  <!-- CONTEXT -->
+  <section class="cs-section">
+    <div class="section-eyebrow">context</div>
+    <h2>The setup</h2>
+    <p>[case]Hacks is a hackathon built for a deliberately mixed crowd — 150+ students ranging from total beginners to experienced builders. The hard part isn't running the event; it's making sure a first-timer and a seasoned competitor can both walk away having learned something and shipped something they're proud of. As VP of Education, I owned the part of the experience that makes that possible: what participants learn, what they build, and how their work gets judged.</p>
+    <a class="btn btn-ghost" href="files/caseHacks-Case-Package.pdf" target="_blank" rel="noopener" style="margin-top:18px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>
+      Read the case package (PDF)
+    </a>
+  </section>
+
+  <!-- ROLE / PROBLEM grid -->
+  <section class="cs-section">
+    <div class="cs-cards">
+      <div class="cs-card">
+        <div class="cn">01</div>
+        <h3>My role</h3>
+        <p>Designed and delivered the end-to-end learning experience — from the case participants tackled, to the workshops that got them ready, to the criteria judges used to evaluate them.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cn">02</div>
+        <h3>The problem</h3>
+        <p>A wide skill range and a short timeline. Beginners needed enough scaffolding to start; advanced teams needed enough room to stretch. And every team needed to be judged consistently and fairly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I WORKED ON -->
+  <section class="cs-section">
+    <div class="section-eyebrow">what i worked on</div>
+    <h2>Four things I built</h2>
+    <div class="cs-cards">
+      <div class="cs-card">
+        <div class="cn">✎</div>
+        <h3>One core case</h3>
+        <p>Authored the central case challenge with a clear prompt, constraints, and deliverables — scoped so beginners could complete it and stronger teams could push it further.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cn">▤</div>
+        <h3>Two expert-led workshops</h3>
+        <p>Curated and ran two beginner-ready workshops — product thinking and AI prototyping — that took participants from zero to a working approach.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cn">◎</div>
+        <h3>Alumni panel</h3>
+        <p>Hosted an alumni panel — bringing back past competitors to share how they approached the event, what they'd do differently, and answer questions live.</p>
+      </div>
+      <div class="cs-card">
+        <div class="cn">⚖</div>
+        <h3>Judging framework</h3>
+        <p>Established judging criteria and an evaluation framework so final submissions were scored consistently, transparently, and fairly across all teams.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOPS -->
+  <section class="cs-section">
+    <div class="section-eyebrow">the workshops</div>
+    <h2>Two sessions, two experts</h2>
+    <p style="margin-bottom:16px">I lined up two industry speakers and built each session to meet beginners where they were — one on framing the problem, one on building fast.</p>
+    <div class="ws-list">
+
+      <div class="ws-card">
+        <img class="ws-graphic" src="img/ws1-natasha.png" alt="Workshop 1 — Natasha Kasunic, Modern Business Case Analysis" />
+        <div class="ws-body">
+          <div>
+            <div class="ws-num">Workshop 01</div>
+            <h3>Modern Business Case Analysis</h3>
+            <p class="ws-by">Natasha Kasunic <span>· Technical Customer Success Lead @ Tightknit (prev. Head of Product)</span></p>
+            <p class="ws-desc">A "Product Thinking 101" session on how to fall in love with the problem before you build the solution. Natasha gave participants a repeatable way to frame and pressure-test a case — the foundation they needed before writing a single line of their pitch.</p>
+          </div>
+          <figure style="margin:0">
+            <img class="ws-candid" src="img/cs-ws1-talk.jpg" alt="Natasha Kasunic delivering Product Thinking 101" />
+            <figcaption class="ws-cap">Product Thinking 101 · live session</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="ws-card">
+        <img class="ws-graphic" src="img/ws2-syed.png" alt="Workshop 2 — Syed Ahmed, AI Tools for Rapid Prototyping" />
+        <div class="ws-body">
+          <div>
+            <div class="ws-num">Workshop 02</div>
+            <h3>AI Tools for Rapid Prototyping</h3>
+            <p class="ws-by">Syed Ahmed <span>· Founding Engineer @ Zero to Agent</span></p>
+            <p class="ws-desc">A hands-on walkthrough of going from idea to working prototype fast using modern AI tooling. Syed showed teams how to build and iterate quickly — so even first-timers could ship something real inside the event's timeline.</p>
+          </div>
+          <figure style="margin:0">
+            <img class="ws-candid" src="img/cs-ws2-talk.jpg" alt="Syed Ahmed presenting AI Tools for Rapid Prototyping" />
+            <figcaption class="ws-cap">AI prototyping · live session</figcaption>
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="cs-section">
+    <div class="section-eyebrow">process</div>
+    <h2>How it came together</h2>
+    <div class="timeline" style="margin-top:14px">
+      <div class="tline"><span class="node"></span><div class="tdate">step 01</div><h5>Scope the audience</h5><p>Mapped the skill spread and designed the case so first-timers and advanced teams could both find a level.</p></div>
+      <div class="tline"><span class="node"></span><div class="tdate">step 02</div><h5>Author the case</h5><p>Wrote the prompt, constraints, and deliverables — with enough structure for beginners to get started.</p></div>
+      <div class="tline"><span class="node"></span><div class="tdate">step 03</div><h5>Build the runway</h5><p>Worked with two industry speakers and shaped beginner-ready workshops to fill the biggest knowledge gaps.</p></div>
+      <div class="tline"><span class="node"></span><div class="tdate">step 04</div><h5>Define fair judging</h5><p>Created the rubric and evaluation framework, then briefed judges to keep scoring consistent.</p></div>
+    </div>
+  </section>
+
+  <!-- JUDGING CRITERIA -->
+  <section class="cs-section">
+    <div class="section-eyebrow">judging criteria</div>
+    <h2>The rubric</h2>
+    <p style="margin-bottom:16px">The evaluation framework I built — weighted so effort and clarity counted alongside raw technical skill, which kept it fair for beginners.</p>
+    <div class="crit-table">
+      <div class="crit"><div class="cl">Problem understanding<span>Did the team grasp and frame the case well?</span></div><div class="cw">25%</div></div>
+      <div class="crit"><div class="cl">Solution &amp; execution<span>Quality, completeness, and feasibility of the build.</span></div><div class="cw">30%</div></div>
+      <div class="crit"><div class="cl">Innovation &amp; creativity<span>Originality of the approach.</span></div><div class="cw">20%</div></div>
+      <div class="crit"><div class="cl">Presentation &amp; clarity<span>How clearly the team told their story.</span></div><div class="cw">15%</div></div>
+      <div class="crit"><div class="cl">Teamwork &amp; effort<span>Collaboration and use of the time given.</span></div><div class="cw">10%</div></div>
+    </div>
+    <a class="btn btn-ghost" href="files/caseHacks-Judging-Package.pdf" target="_blank" rel="noopener" style="margin-top:18px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3v5h5M7 3h8l5 5v13H7z"/></svg>
+      Download the judging package (PDF)
+    </a>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="cs-section">
+    <div class="section-eyebrow">on the day</div>
+    <h2>Moments from the event</h2>
+    <div class="cs-gallery">
+      <figure><img src="img/cs-pitch.jpg" alt="Opening ceremonies at caseHacks" /><figcaption>Opening ceremonies</figcaption></figure>
+      <figure><img src="img/cs-fireside.jpg" alt="Alumni panel" /><figcaption>Alumni panel</figcaption></figure>
+      <figure><img src="img/cs-panel.jpg" alt="Speaker panel and Q&amp;A with participants" /><figcaption>Speaker panel &amp; Q&amp;A</figcaption></figure>
+      <figure><img src="img/cs-team.jpg" alt="The caseHacks organizing team" /><figcaption>The caseHacks team</figcaption></figure>
+    </div>
+  </section>
+
+  <!-- OUTCOME -->
+  <section class="cs-section">
+    <div class="section-eyebrow">outcome &amp; learning</div>
+    <h2>What happened &amp; what I took away</h2>
+    <p>The education track gave 150+ students a clear path from "I'm not sure where to start" to a finished, judged submission — and gave judges a framework they could apply consistently. The biggest lesson: good scaffolding is a design problem. When you scope the case, the workshops, and the rubric as one connected system, beginners and advanced builders can share the same event and both feel it was built for them.</p>
+  </section>
+
+  <!-- NEXT -->
+  <section class="cs-section" style="margin-top:40px;text-align:center">
+    <a class="btn btn-primary" href="index.html" style="background:var(--accent)">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Back to all work
+    </a>
+  </section>
+
+</div>
+
+</body>
+</html>
